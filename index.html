@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>Cedro</title></head>
+<body>
+
+    <svg style="display: none;">
+        <symbol id="cedro" viewBox="0 0 91 32">
+            <g>
+                <path d="M75.3369 9H78.1435C82.2469 9 85.2635 11.9989 85.2635 15.9996C85.2635 20.0003 82.2421 22.9976 78.1435 22.9976H75.3369C71.2286 22.9976 68.2023 19.9971 68.2023 15.9996C68.2023 12.0022 71.2286 9 75.3369 9ZM75.3369 20.8658H78.1435C80.9355 20.8658 83.0068 18.7842 83.0068 15.9948C83.0068 13.2053 80.9307 11.1238 78.1435 11.1238H75.3369C72.54 11.1238 70.4557 13.2232 70.4557 15.9948C70.4557 18.7664 72.5449 20.8658 75.3369 20.8658ZM19.0349 17.7664C18.4297 19.6807 16.8287 20.8432 14.7623 20.8432H11.9524C9.24497 20.8432 7.25835 18.8185 7.25835 16.0047C7.25835 13.1909 9.24497 11.1564 11.9524 11.1564H14.7623C16.7636 11.1564 18.3418 12.241 18.9926 14.0401H21.2363C20.5253 11.0022 17.9627 9.01482 14.7623 9.01482H11.9524C7.95147 9.01482 5 11.9699 5 16.0047C5 20.0395 7.95147 22.9865 11.9524 22.9865H14.7623C18.0164 22.9865 20.5823 20.9439 21.2835 17.7696L19.0349 17.7664ZM25.8431 20.6555V16.8789H33.7831V14.8493H25.8431V11.3243H34.2842V9.25415H23.6222V22.7452H34.4957V20.6555H25.8431ZM37.1705 9.25415H44.7509C48.7274 9.25415 51.6041 12.0826 51.6041 15.9956C51.6041 19.9086 48.7225 22.7452 44.7509 22.7452H37.1705V9.25415ZM39.3914 20.6799H44.6842C47.416 20.6799 49.336 18.7217 49.336 15.9956C49.336 13.2695 47.416 11.3211 44.6842 11.3211H39.3914V20.6799ZM63.5906 17.4407C64.4026 17.1576 65.1049 16.6271 65.5983 15.924C66.0917 15.221 66.3512 14.381 66.3403 13.5228C66.3403 11.0353 64.4057 9.25415 61.8008 9.25415H53.7242V22.7452H55.9451V17.7524H61.3144L64.2186 22.7452H66.7113L63.5906 17.4407ZM61.6707 15.6822H55.9451V11.3243H61.6707C63.135 11.3243 64.082 12.2514 64.082 13.5033C64.082 14.7551 63.1415 15.6822 61.6707 15.6822Z"/>
+            </g>
+        </symbol>    
+    
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="arrow__down" viewBox="0 0 16 16">
+            <g>
+                <path d="M3 6L8 11L13 6" stroke-width="1.5"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="tel__icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M8.66375 6H6.1579C6.1579 6 5.80262 8.74333 6.1579 10.4408C6.59925 12.5495 7.10164 13.8516 8.62501 15.375C10.1484 16.8984 11.4505 17.4007 13.5592 17.8421C15.2567 18.1974 18 17.8421 18 17.8421V15.3363C18 14.4754 17.4491 13.7111 16.6325 13.4389L15.5094 13.0645C15.2293 12.9712 14.9209 13.069 14.7459 13.3069C14.1043 14.1787 12.8226 14.2379 12.1034 13.4288L10.6653 11.8109C10.0139 11.0782 10.0561 9.96226 10.7609 9.28078C10.9633 9.08506 11.0355 8.79056 10.9464 8.52344L10.5611 7.36754C10.2889 6.55086 9.52461 6 8.66375 6Z" stroke-width="1.5"/>        
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="search__icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M14.8889 14.9762C15.98 14.0345 16.6667 12.666 16.6667 11.1429C16.6667 8.30254 14.2789 6 11.3333 6C8.38781 6 6 8.30254 6 11.1429C6 13.9832 8.38781 16.2857 11.3333 16.2857C12.6993 16.2857 13.9453 15.7905 14.8889 14.9762ZM14.8889 14.9762L18 18" stroke-width="1.5"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="heart__icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M17.9205 7.06089C17.5784 6.72455 17.1722 6.45775 16.7252 6.27572C16.2782 6.09369 15.799 6 15.3151 6C14.8312 6 14.3521 6.09369 13.905 6.27572C13.458 6.45775 13.0518 6.72455 12.7098 7.06089L11.9998 7.75857L11.2899 7.06089C10.5989 6.38184 9.66172 6.00035 8.68453 6.00035C7.70733 6.00035 6.77016 6.38184 6.07917 7.06089C5.38819 7.73994 5 8.66092 5 9.62124C5 10.5816 5.38819 11.5026 6.07917 12.1816L6.78911 12.8793L11.9998 18L17.2105 12.8793L17.9205 12.1816C18.2627 11.8454 18.5342 11.4463 18.7194 11.007C18.9047 10.5677 19 10.0968 19 9.62124C19 9.14571 18.9047 8.67484 18.7194 8.23552C18.5342 7.79621 18.2627 7.39706 17.9205 7.06089V7.06089Z" stroke-width="1.5"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="shop__icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M8.46667 9.33333H6C5.44772 9.33333 5 9.78105 5 10.3333V17C5 17.5523 5.44772 18 6 18H17C17.5523 18 18 17.5523 18 17V10.3333C18 9.78105 17.5523 9.33333 17 9.33333H14.5333M8.46667 9.33333V12.3667M8.46667 9.33333H14.5333M8.46667 9.33333V8.03333C8.46667 6.35807 9.82474 5 11.5 5V5C13.1753 5 14.5333 6.35807 14.5333 8.03333V9.33333M14.5333 12.3667V9.33333" stroke-width="1.5"/>
+            </g>
+        </symbol>
+    </svg>
+    
+        
+    <svg style="display: none;">
+        <symbol id="user__icon" viewBox="0 0 24 24">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25023 9.40069C9.25023 7.92539 10.4695 6.70837 11.9998 6.70837C13.5301 6.70837 14.7494 7.92539 14.7494 9.40069C14.7494 10.876 13.5301 12.093 11.9998 12.093C10.4695 12.093 9.25023 10.876 9.25023 9.40069ZM11.9998 5.20837C9.66456 5.20837 7.75023 7.07371 7.75023 9.40069C7.75023 11.7277 9.66456 13.593 11.9998 13.593C14.3351 13.593 16.2494 11.7277 16.2494 9.40069C16.2494 7.07371 14.3351 5.20837 11.9998 5.20837ZM8.375 18.6657C8.375 17.1787 9.58039 15.9734 11.0673 15.9734H12.9317C14.4186 15.9734 15.624 17.1787 15.624 18.6657H17.124C17.124 16.3503 15.247 14.4734 12.9317 14.4734H11.0673C8.75196 14.4734 6.875 16.3503 6.875 18.6657H8.375Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="burger__icon" viewBox="0 0 24 24">
+            <g>
+                <path d="M2 9.75H22V8.25H2V9.75ZM2 15.75H22V14.25H2V15.75Z"/>
+            </g>
+        </symbol>
+    </svg>
+        
+    
+    
+    <svg style="display: none;">
+        <symbol id="burger__icon__close" viewBox="0 0 24 24">
+            <g>
+                <path d="M13.0607 12.0001L19.6014 5.45934L18.5408 4.39868L12 10.9395L5.45928 4.39876L4.39862 5.45942L10.9393 12.0001L4.39864 18.5408L5.4593 19.6015L12 13.0608L18.5408 19.6016L19.6014 18.5409L13.0607 12.0001Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="tel__menu" viewBox="0 0 16 17">
+            <g>
+                <path d="M5.95133 7.47489C6.68115 8.75704 7.74296 9.81885 9.02511 10.5487L9.71267 9.58578C9.82323 9.43095 9.98672 9.32202 10.1722 9.27959C10.3576 9.23717 10.5522 9.26419 10.7191 9.35556C11.8191 9.95672 13.0339 10.3183 14.2837 10.4164C14.4787 10.4319 14.6608 10.5203 14.7935 10.664C14.9263 10.8077 15 10.9962 15 11.1919V14.6623C15 14.8549 14.9286 15.0406 14.7996 15.1836C14.6706 15.3266 14.4931 15.4166 14.3016 15.4362C13.8893 15.479 13.474 15.5 13.0556 15.5C6.39778 15.5 1 10.1022 1 3.44444C1 3.026 1.021 2.61067 1.06378 2.19844C1.08342 2.00688 1.17343 1.82941 1.31639 1.70038C1.45935 1.57136 1.64509 1.49996 1.83767 1.5H5.30811C5.50377 1.49998 5.69225 1.5737 5.83597 1.70646C5.9797 1.83923 6.0681 2.02128 6.08356 2.21633C6.18173 3.46606 6.54328 4.68086 7.14444 5.78089C7.23581 5.94777 7.26283 6.14235 7.22041 6.32782C7.17798 6.51328 7.06905 6.67677 6.91422 6.78733L5.95133 7.47489ZM3.98978 6.96389L5.46756 5.90844C5.04816 5.00318 4.76083 4.04243 4.61433 3.05556H2.56333C2.55867 3.18467 2.55633 3.31456 2.55633 3.44444C2.55556 9.24356 7.25644 13.9444 13.0556 13.9444C13.1854 13.9444 13.3153 13.9421 13.4444 13.9367V11.8857C12.4576 11.7392 11.4968 11.4518 10.5916 11.0324L9.53611 12.5102C9.11118 12.3451 8.69845 12.1502 8.301 11.9269L8.25589 11.9012C6.73034 11.033 5.467 9.76966 4.59878 8.24411L4.57311 8.199C4.34982 7.80155 4.15489 7.38882 3.98978 6.96389Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="post__menu" viewBox="0 0 16 17">
+            <g>
+                <path d="M2.00065 2.5H14.0007C14.1775 2.5 14.347 2.57024 14.4721 2.69526C14.5971 2.82029 14.6673 2.98986 14.6673 3.16667V13.8333C14.6673 14.0101 14.5971 14.1797 14.4721 14.3047C14.347 14.4298 14.1775 14.5 14.0007 14.5H2.00065C1.82384 14.5 1.65427 14.4298 1.52925 14.3047C1.40422 14.1797 1.33398 14.0101 1.33398 13.8333V3.16667C1.33398 2.98986 1.40422 2.82029 1.52925 2.69526C1.65427 2.57024 1.82384 2.5 2.00065 2.5ZM13.334 5.32533L8.04865 10.0587L2.66732 5.31067V13.1667H13.334V5.32533ZM3.00798 3.83333L8.04132 8.27467L13.002 3.83333H3.00798Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="clock__menu" viewBox="0 0 16 17">
+            <g>
+                <path d="M8 1.5C4.1402 1.5 1 4.6402 1 8.5C1 12.3598 4.1402 15.5 8 15.5C11.8598 15.5 15 12.3598 15 8.5C15 4.6402 11.8598 1.5 8 1.5ZM8 14.1C4.9123 14.1 2.4 11.5877 2.4 8.5C2.4 5.4123 4.9123 2.9 8 2.9C11.0877 2.9 13.6 5.4123 13.6 8.5C13.6 11.5877 11.0877 14.1 8 14.1Z"/>
+                <path d="M8.125 5.375H6.875V8.75875L8.93313 10.8169L9.81687 9.93312L8.125 8.24125V5.375Z"/> 
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="loc__menu" viewBox="0 0 16 16">
+            <g>
+                <path d="M8.00123 9.33272C9.4719 9.33272 10.6679 8.13672 10.6679 6.66606C10.6679 5.19539 9.4719 3.99939 8.00123 3.99939C6.53056 3.99939 5.33456 5.19539 5.33456 6.66606C5.33456 8.13672 6.53056 9.33272 8.00123 9.33272ZM8.00123 5.33272C8.73656 5.33272 9.33456 5.93072 9.33456 6.66606C9.33456 7.40139 8.73656 7.99939 8.00123 7.99939C7.2659 7.99939 6.6679 7.40139 6.6679 6.66606C6.6679 5.93072 7.2659 5.33272 8.00123 5.33272Z"/>
+                <path d="M7.61332 14.5427C7.72932 14.6254 7.86465 14.6667 7.99999 14.6667C8.13532 14.6667 8.27065 14.6254 8.38665 14.5427C8.58932 14.3994 13.3527 10.96 13.3333 6.66671C13.3333 3.72604 10.9407 1.33337 7.99999 1.33337C5.05932 1.33337 2.66665 3.72604 2.66665 6.66337C2.64732 10.96 7.41065 14.3994 7.61332 14.5427ZM7.99999 2.66671C10.206 2.66671 12 4.46071 12 6.67004C12.014 9.62871 9.07465 12.2854 7.99999 13.1567C6.92599 12.2847 3.98599 9.62737 3.99999 6.66671C3.99999 4.46071 5.79399 2.66671 7.99999 2.66671Z"/>          
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    
+    <svg style="display: none;">
+        <symbol id="pass__eye" viewBox="0 0 24 24">
+            <g>
+                <path d="M12 7C15.7855 7 21 12 21 12C21 12 15.7855 17 12 17C8.21453 17 3 12 3 12C3 12 8.21453 7 12 7Z"/>
+                <circle cx="12" cy="12" r="2"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <svg style="display: none;">
+        <symbol id="pass__eye__off" viewBox="0 0 24 24">
+            <g>
+                <path d="M12 7C15.7855 7 21 12 21 12C21 12 15.7855 17 12 17C8.21453 17 3 12 3 12C3 12 8.21453 7 12 7Z"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M5 19L19 5"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="main__more__icon" viewBox="0 0 16 16">
+            <g>
+                <path d="M7.24475 11L10.2448 8L7.24475 5"/>
+                <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="product__heart" viewBox="0 0 24 24">
+            <g>
+                <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    <svg style="display: none;">
+        <symbol id="footer__cedro__icon" viewBox="0 0 13 11">
+            <g>
+                <path d="M5.86248 0H6.44968C6.48556 0 6.51997 0.0133702 6.54535 0.0371692C6.57072 0.0609682 6.58498 0.0932466 6.58498 0.126904V10.8731C6.58498 10.9068 6.57072 10.939 6.54535 10.9628C6.51997 10.9866 6.48556 11 6.44968 11H5.86248C5.09238 11 4.32983 10.8577 3.61838 10.5812C2.90694 10.3047 2.26054 9.89943 1.71612 9.38856C1.17171 8.87769 0.739937 8.27121 0.445479 7.60378C0.15102 6.93635 -0.000354833 6.22105 6.2456e-07 5.49873C6.2456e-07 4.04038 0.617653 2.64175 1.71708 1.61054C2.81651 0.579329 4.30766 0 5.86248 0Z"/>
+                <path d="M12.862 0.000976562H8.20099C8.12478 0.000976562 8.06299 0.0589297 8.06299 0.130418V4.68627C8.06299 4.75776 8.12478 4.81571 8.20099 4.81571H12.862C12.9383 4.81571 13 4.75776 13 4.68627V0.130418C13 0.0589297 12.9383 0.000976562 12.862 0.000976562Z"/>
+                <path d="M12.862 6.14453H8.20099C8.12478 6.14453 8.06299 6.20248 8.06299 6.27397V10.8666C8.06299 10.9381 8.12478 10.9961 8.20099 10.9961H12.862C12.9383 10.9961 13 10.9381 13 10.8666V6.27397C13 6.20248 12.9383 6.14453 12.862 6.14453Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    
+    
+    
+    
+    <svg style="display: none;">
+        <symbol  viewBox="0 0 32 32">
+            <g>
+                <rect width="32" height="32" rx="16" fill="white"  fill-opacity="0.08"/>
+                <path d="M22.3859 12.57C22.4793 12.26 22.3859 12.0327 21.9446 12.0327H20.4826C20.1106 12.0327 19.9406 12.2294 19.8473 12.4454C19.8473 12.4454 19.1039 14.258 18.0506 15.4334C17.7106 15.7754 17.5553 15.8834 17.3699 15.8834C17.2773 15.8834 17.1426 15.7754 17.1426 15.4654V12.57C17.1426 12.198 17.0353 12.0327 16.7253 12.0327H14.4279C14.1959 12.0327 14.0559 12.2047 14.0559 12.3687C14.0559 12.7207 14.5826 12.802 14.6366 13.794V15.946C14.6366 16.4174 14.5519 16.5034 14.3653 16.5034C13.8699 16.5034 12.6646 14.684 11.9493 12.6014C11.8099 12.1967 11.6693 12.0334 11.2959 12.0334H9.83459C9.41659 12.0334 9.33325 12.23 9.33325 12.446C9.33325 12.834 9.82859 14.754 11.6406 17.2934C12.8486 19.0274 14.5493 19.9674 16.0986 19.9674C17.0273 19.9674 17.1419 19.7587 17.1419 19.3987V18.088C17.1419 17.6707 17.2306 17.5867 17.5246 17.5867C17.7406 17.5867 18.1126 17.696 18.9799 18.5314C19.9706 19.522 20.1346 19.9667 20.6913 19.9667H22.1526C22.5699 19.9667 22.7786 19.758 22.6586 19.346C22.5273 18.936 22.0539 18.3394 21.4259 17.6334C21.0846 17.2307 20.5746 16.7974 20.4193 16.5807C20.2026 16.3014 20.2653 16.178 20.4193 15.93C20.4193 15.93 22.2006 13.4227 22.3859 12.57Z" fill="#D0BC7A"/>
+                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white" stroke-opacity="0.16"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    
+    
+    <div class="vk__hide" style="display: none;">
+        <svg id="footer__vk__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_926)">
+            <rect width="32" height="32" rx="16" fill="white" fill-opacity="0.08"/>
+            <path d="M22.3859 12.57C22.4793 12.26 22.3859 12.0327 21.9446 12.0327H20.4826C20.1106 12.0327 19.9406 12.2294 19.8473 12.4454C19.8473 12.4454 19.1039 14.258 18.0506 15.4334C17.7106 15.7754 17.5553 15.8834 17.3699 15.8834C17.2773 15.8834 17.1426 15.7754 17.1426 15.4654V12.57C17.1426 12.198 17.0353 12.0327 16.7253 12.0327H14.4279C14.1959 12.0327 14.0559 12.2047 14.0559 12.3687C14.0559 12.7207 14.5826 12.802 14.6366 13.794V15.946C14.6366 16.4174 14.5519 16.5034 14.3653 16.5034C13.8699 16.5034 12.6646 14.684 11.9493 12.6014C11.8099 12.1967 11.6693 12.0334 11.2959 12.0334H9.83459C9.41659 12.0334 9.33325 12.23 9.33325 12.446C9.33325 12.834 9.82859 14.754 11.6406 17.2934C12.8486 19.0274 14.5493 19.9674 16.0986 19.9674C17.0273 19.9674 17.1419 19.7587 17.1419 19.3987V18.088C17.1419 17.6707 17.2306 17.5867 17.5246 17.5867C17.7406 17.5867 18.1126 17.696 18.9799 18.5314C19.9706 19.522 20.1346 19.9667 20.6913 19.9667H22.1526C22.5699 19.9667 22.7786 19.758 22.6586 19.346C22.5273 18.936 22.0539 18.3394 21.4259 17.6334C21.0846 17.2307 20.5746 16.7974 20.4193 16.5807C20.2026 16.3014 20.2653 16.178 20.4193 15.93C20.4193 15.93 22.2006 13.4227 22.3859 12.57Z" fill="#D0BC7A"/>
+            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white" stroke-opacity="0.16"/>
+            </g>
+            <defs>
+            <filter id="filter0_b_1_926" x="-24" y="-24" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="12"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_926"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_926" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+    </div>
+        
+    <div class="fb__hide" style="display: none;">
+        <svg id="footer__fb__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_928)">
+            <rect width="32" height="32" rx="16" fill="white" fill-opacity="0.08"/>
+            <path d="M16 9C12.1342 9 9 12.1531 9 16.0423C9 19.5567 11.5595 22.4697 14.9065 23V18.0784H13.1283V16.0423H14.9065V14.4907C14.9065 12.7243 15.9517 11.7503 17.55 11.7503C18.3158 11.7503 19.1181 11.8876 19.1181 11.8876V13.6195H18.2332C17.3651 13.6195 17.0935 14.1632 17.0935 14.7203V16.0408H19.0334L18.7233 18.077H17.0935V22.9986C20.4405 22.4711 23 19.5574 23 16.0423C23 12.1531 19.8658 9 16 9Z" fill="#D0BC7A"/>
+            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white" stroke-opacity="0.16"/>
+            </g>
+            <defs>
+            <filter id="filter0_b_1_928" x="-24" y="-24" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="12"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_928"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_928" result="shape"/>
+            </filter>
+            </defs>
+        </svg>        
+    </div>
+    
+    
+    <div class="inst__hide" style="display: none;">
+        <svg id="footer__inst__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_930)">
+            <rect width="32" height="32" rx="16" fill="white" fill-opacity="0.08"/>
+            <path d="M21.9647 13.5366C21.9573 13.032 21.864 12.5313 21.6853 12.0593C21.3727 11.2533 20.736 10.616 19.93 10.304C19.464 10.1286 18.9713 10.0346 18.4727 10.024C17.8313 9.9953 17.628 9.9873 16 9.9873C14.372 9.9873 14.1633 9.9873 13.5267 10.024C13.0287 10.0346 12.536 10.1286 12.07 10.304C11.264 10.616 10.6267 11.2533 10.3147 12.0593C10.1393 12.5253 10.0447 13.018 10.0353 13.516C10.0067 14.158 9.998 14.3613 9.998 15.9893C9.998 17.6173 9.998 17.8253 10.0353 18.4626C10.0453 18.9613 10.1393 19.4533 10.3147 19.9206C10.6273 20.726 11.264 21.3633 12.0707 21.6753C12.5347 21.8566 13.0273 21.9593 13.5273 21.9753C14.1693 22.004 14.3727 22.0126 16.0007 22.0126C17.6287 22.0126 17.8373 22.0126 18.474 21.9753C18.972 21.9653 19.4647 21.8713 19.9313 21.696C20.7373 21.3833 21.374 20.746 21.6867 19.9406C21.862 19.474 21.956 18.982 21.966 18.4826C21.9947 17.8413 22.0033 17.638 22.0033 16.0093C22.002 14.3813 22.002 14.1746 21.9647 13.5366ZM15.996 19.068C14.2933 19.068 12.914 17.6886 12.914 15.986C12.914 14.2833 14.2933 12.904 15.996 12.904C17.6973 12.904 19.078 14.2833 19.078 15.986C19.078 17.6886 17.6973 19.068 15.996 19.068ZM19.2007 13.5086C18.8027 13.5086 18.482 13.1873 18.482 12.79C18.482 12.3926 18.8027 12.0713 19.2007 12.0713C19.5973 12.0713 19.9187 12.3926 19.9187 12.79C19.9187 13.1873 19.5973 13.5086 19.2007 13.5086Z" fill="#D0BC7A"/>
+            <path d="M15.996 17.988C17.1017 17.988 17.998 17.0917 17.998 15.986C17.998 14.8803 17.1017 13.984 15.996 13.984C14.8903 13.984 13.994 14.8803 13.994 15.986C13.994 17.0917 14.8903 17.988 15.996 17.988Z" fill="#D0BC7A"/>
+            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white" stroke-opacity="0.16"/>
+            </g>
+            <defs>
+            <filter id="filter0_b_1_930" x="-24" y="-24" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="12"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_930"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_930" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+            
+    </div>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__fixed">
+                <div class="container-fluid">
+                    <div class="header__inner">
+                        <a class="header__logo" href="#">
+                            <svg class="header__logo">
+                                <use xlink:href="#cedro"></use>
+                            </svg>
+                        </a>
+            
+                        <div class="header__nav__center">
+                            <a class="header__nav" href="#">ПИГМЕНТЫ
+                                <svg class="arrow__down">
+                                    <use xlink:href="#arrow__down"></use>
+                                </svg>
+                            </a>
+                            <a class="header__nav" href="#">ТОВАРЫ ДЛЯ ПМ
+                                <svg class="arrow__down">
+                                    <use xlink:href="#arrow__down"></use>
+                                </svg>
+                            </a>
+                            <a class="header__nav" href="#">РЕМУВЕР</a>
+                            <a class="header__nav" href="#">АКЦИИ</a>
+                            <a class="header__nav" href="#">ОБУЧЕНИЕ</a>
+                        </div>
+            
+                        <div class="header__nav__rigth">
+                            <a class="header__nav__number header__nav" href="tel:88005553535">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#tel__icon"></use>
+                                </svg>
+                                8 (800) 555-35-35</a>
+            
+                            <div class="hedaer__nav__icons">
+                                <a class="hedaer__nav__icon" href="#">
+                                    <svg class="nav__icon">
+                                        <use xlink:href="#search__icon"></use>
+                                    </svg>
+                                </a>
+                                <a class="hedaer__nav__icon" href="#">
+                                    <svg class="nav__icon">
+                                        <use xlink:href="#heart__icon"></use>
+                                    </svg>
+                                </a>
+                                <a class="hedaer__nav__icon" href="#">
+                                    <svg class="nav__icon">
+                                        <use xlink:href="#shop__icon"></use>
+                                    </svg>
+                                </a>
+                                <a class="hedaer__nav__icon" href="#">
+                                    <svg class="user__icon">
+                                        <use xlink:href="#user__icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="header__burger">
+                            <div class="burger">
+                                <svg class="burger__icon">
+                                    <use xlink:href="#burger__icon"></use>
+                                </svg>
+                            </div>
+            
+                            <div class="burger">
+                                <svg class="burger__icon__close">
+                                    <use xlink:href="#burger__icon__close"></use>
+                                </svg>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Menu -->
+        <div class="menu">
+            <div class="container">
+                <div class="menu__inner row">
+                    <div class="menu__group col-sm-2 col-12">
+                        <h1 class="menu__title">Продукция</h1>
+        
+                        <div class="menu__items">
+                            <div class="menu__item"><a class="menu__item__link" href="#">Пигменты</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Пигменты</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Аппараты</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Иглы</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Расходные материалы</a></div>
+                        </div>
+                    </div>
+        
+                    <div class="menu__group col-sm-3 offset-sm-2 col-12">
+                        <h1 class="menu__title">Комапния</h1>
+        
+                        <div class="menu__items">
+                            <div class="menu__item"><a class="menu__item__link" href="#">Блог</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Обучение</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Стать представителем</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Контакты</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="#">Политика конфиденциальности</a></div>
+                        </div>
+                    </div>
+        
+                    <div class="menu__group col-sm-4 offset-sm-1 col-12">
+                        <h1 class="menu__title">Контакты</h1>
+        
+                        <div class="menu__items">
+                            <div class="menu__item"><a class="menu__item__link" href="tel:88005553535">
+                                <svg class="icon__menu">
+                                    <use xlink:href="#tel__menu"></use>
+                                </svg>
+                                8 (800) 555-35-35</a></div>
+                            <div class="menu__item"><a class="menu__item__link" href="mailto:cedro@yandex.ru">
+                                <svg class="icon__menu">
+                                    <use xlink:href="#post__menu"></use>
+                                </svg>
+                                cedro@yandex.ru</a></div>
+                            <div class="menu__item">
+                                <svg class="icon__menu">
+                                    <use xlink:href="#clock__menu"></use>
+                                </svg>
+                                Время работы: пн - пт с 10 до 19</div>
+                            <div class="menu__item">
+                                <svg class="icon__menu">
+                                    <use xlink:href="#loc__menu"></use>
+                                </svg>
+                                г. Санкт-Петербург,
+                                <br>м. Звездная</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </div>
+
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                <div class="main__inner row">
+                    <div class="main__nav">
+                        <div class="main__nav__items col-md-2">
+                            <a class="main__nav__item" href="#">
+                                ПРОФИЛЬ
+                            </a>
+        
+                            <a class="main__nav__item" href="#">
+                                МОИ ЗАКАЗЫ
+                            <a>
+        
+                            <a class="main__nav__item" href="#">
+                                ВЫХОД
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="main__content">
+                        <div class="main__header">
+                            <h1 class="main__header__content col-md offset-md-1">ПРОФИЛЬ</h1>
+                        </div>
+        
+                        <div class="main__form">
+                            <div class="main__form__inner col-md-6 offset-md-1">
+                                <h2 class="main__subheader">Данные профиля</h2>
+        
+                                <form class="main__form__inner" action="" method="post">
+                                    <div class="main__form__name">ФИО</div>
+                                    <input class="main__input" type="text" name="name" placeholder="Алексеева Ульяна Евгеньевна">
+        
+                                    <div class="main__form__name">Почта</div>
+                                    <input class="main__input" type="email" name="email" placeholder="pochta07@mail.ru">
+        
+                                    <div class="main__form__name">Телефон</div>
+                                    <input class="main__input" type="tel" name="tel" placeholder="+7 (999) 999-99-99">
+        
+                                    <div class="main__form__name">Имя аккаунта</div>
+                                    <input class="main__input" type="text" name="name" placeholder="Alex Y.E.">
+        
+                                    <div class="main__form__name">Профиль в инстаграм</div>
+                                    <input class="main__input" type="text" name="name" placeholder="@Alex_YE">
+        
+                                    <div class="main__form__name">Адрес доставки</div>
+                                    <input class="main__input" type="text" name="name" placeholder="Город, улица, дом">
+                                </form>
+        
+                            </div>
+                        </div>
+        
+        
+                        <div class="main__form">
+                            <div class="main__form__inner col-md-6 offset-md-1">
+                                <h2 class="main__subheader">Изменить пароль</h2>
+        
+                                <form class="main__form__inner" action="" method="post">
+        
+                                    <div class="main__form__name">Старый пароль</div>
+                                    <div class="main__form__pass">
+                                        <input class="main__input main__input__pass" type="password" name="name" placeholder="Введите старый пароль">
+                                        
+                                        <svg class="pass__eyes pass__eyes__on">
+                                            <use xlink:href="#pass__eye"></use>
+                                        </svg>
+                                        <svg class="pass__eyes pass__eyes__off">
+                                            <use xlink:href="#pass__eye__off"></use>
+                                        </svg>
+                                    </div>
+        
+                                    <div class="main__form__name">Новый пароль</div>
+                                    <div class="main__form__pass main__form__pass__2">
+                                        <input class="main__input main__input__pass main__input__pass__2" type="password" name="name" placeholder="Введите новый пароль">
+                                        
+                                        <svg class="pass__eyes pass__eyes__on pass__eyes__on__2">
+                                            <use xlink:href="#pass__eye"></use>
+                                        </svg>
+                                        <svg class="pass__eyes pass__eyes__off pass__eyes__off__2">
+                                            <use xlink:href="#pass__eye__off"></use>
+                                        </svg>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+        
+                        <div class="main__form main__form__inner col-md-6 offset-md-1">
+                            <button class="main__btn" href="#">Сохранить изменения</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        
+            <div class="main__product">
+                <div class="container">
+                    <div class="main__product__head">
+                        <h1 class="main__product__header"><span>ТРЕНДЫ</span> СЕЗОНА</h1>
+                        <a class="main__more main__more__top" href="#">Перейти в каталог
+                            <svg class="main__more__icon">
+                                <use xlink:href="#main__more__icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <div class="main__product__wrapper">
+                        <div class="main__product__items row">
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Акция! 1+1=3</div>
+                                </div>
+                            </div>
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content two__border">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Sale</div>
+                                </div>
+                            </div>
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content three__border">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Бесплатная доставка</div>
+                                </div>
+                            </div>
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content four__border">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Sale</div>
+                                </div>
+                            </div>
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Sale</div>
+                                </div>
+                            </div>
+        
+                            <div class="main__product__item col-md-3" href="#">
+                                <img class="main__product__img" src="../../assets/img/product.png" alt="">
+                                
+                                <div class="main__product__content">
+                                    <div class="main__product__inner">
+                                        <h3 class="main__product__inner__header">Brown to Blonde</h3>
+                                        <div class="main__product__subheader">Пигмент для бровей
+                                            <br/>12 ml.
+                                        </div>
+                                            <div class="main__product__prices">
+                                                <div class="main__product__price">1 500 <code class="rouble">Ꝑ</code></div>
+                                            <div class="product__last__price">3 000 <code class="rouble__last">Ꝑ</code></div>
+                                        </div>
+                                    </div>
+        
+                                    <svg class="product__icon">
+                                        <use xlink:href="#product__heart"></use>
+                                    </svg>
+        
+                                    <div class="product__discount">Sale</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.main__product__wrapper -->
+                    
+                    <a class="main__more main__more__bottom" href="#">Перейти в каталог
+                        <svg class="main__more__icon">
+                            <use xlink:href="#main__more__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__menu__block">
+                    <div class="menu__inner menu__inner__footer row">
+                        <div class="menu__group menu__group__footer col-sm-2 col-12">
+                            <h1 class="menu__title">Продукция</h1>
+            
+                            <div class="menu__items">
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Пигменты</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Пигменты</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Аппараты</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Иглы</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Расходные материалы</a></div>
+                            </div>
+                        </div>
+            
+                        <div class="menu__group menu__group__footer col-sm-3 offset-sm-2 col-12">
+                            <h1 class="menu__title">Комапния</h1>
+            
+                            <div class="menu__items">
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Блог</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Обучение</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Стать представителем</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Контакты</a></div>
+                                <div class="menu__item"><a class="menu__item__link menu__item__link__footer" href="#">Политика конфиденциальности</a></div>
+                            </div>
+                        </div>
+            
+                        <div class="menu__group menu__group__footer col-sm-4 offset-sm-1 col-12">
+                            <h1 class="menu__title">Контакты</h1>
+            
+                            <div class="menu__items">
+                                <div class="menu__item "><a class="menu__item__link menu__item__link__footer" href="tel:88005553535">
+                                    <svg class="icon__menu icon__menu__footer">
+                                        <use xlink:href="#tel__menu"></use>
+                                    </svg>
+                                    8 (800) 555-35-35</a></div>
+                                <div class="menu__item "><a class="menu__item__link menu__item__link__footer" href="mailto:cedro@yandex.ru">
+                                    <svg class="icon__menu icon__menu__footer">
+                                        <use xlink:href="#post__menu"></use>
+                                    </svg>
+                                    cedro@yandex.ru</a></div>
+                                <div class="menu__item menu__item__footer">
+                                    <svg class="icon__menu icon__menu__footer">
+                                        <use xlink:href="#clock__menu"></use>
+                                    </svg>
+                                    Время работы: пн - пт с 10 до 19</div>
+                                <div class="menu__item menu__item__footer">
+                                    <svg class="icon__menu icon__menu__footer">
+                                        <use xlink:href="#loc__menu"></use>
+                                    </svg>
+                                    г. Санкт-Петербург,
+                                    <br>м. Звездная</div>
+                            </div>
+                        </div>
+                    </div><!-- /.menu__inner__footer -->
+                </div>
+        
+                <div class="footer__adds">
+                    <div class="footer__adds__inner">
+                        <div class="social__links">
+                            <a class="social__link" href="#">
+                                <svg class="footer_vk__icon">
+                                    <use xlink:href="#footer__vk__icon"></use>
+                                </svg>
+                            </a>
+        
+                            <a class="social__link" href="#">
+                                <svg class="footer_vk__icon">
+                                    <use xlink:href="#footer__fb__icon"></use>
+                                </svg>
+                            </a>
+        
+                            <a class="social__link" href="#">
+                                <svg class="footer_vk__icon">
+                                    <use xlink:href="#footer__inst__icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__copyright">© Cedro — все права защищены, 2020</div>
+        
+                        <a class="footer__cedro">
+                            <div class="footer__cedro__text">Сделано в Cedro</div>
+                            <div class="footer__icon">
+                                <svg class="footer__cedro__icon">
+                                    <use xlink:href="#footer__cedro__icon"></use>
+                                </svg>
+                            </div>
+                        </a>
+        
+                    </div>
+                </div><!-- /.footer__adds -->
+        
+                <div class="footer__text">
+                    <div class="footer__text__inner">
+                        Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации о наличии и актуальной стоимости указанных на сайте услуг обращайтесь, пожалуйста, по телефонам клиник.
+                    </div>
+                </div>
+        
+            </div><!-- /.container -->
+        </footer>
+        
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
